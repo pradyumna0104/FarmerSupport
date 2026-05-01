@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Sprout, BarChart3, CloudRain, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { WeatherWidget } from "../components/common/WeatherWidget"; // Adjust the path if needed
 
 const quickStatValues   = ["24 markets", "7-day alerts", "18 crops"];
 const quickStatValuesHi = ["24 मंडियाँ",  "7 दिन अलर्ट",   "18 फसलें"];
@@ -283,6 +284,9 @@ export const Home = () => {
             ))}
           </div>
         </div>
+        
+        {/* Drop it wherever you want the widget to appear */}
+        <WeatherWidget />
 
         {/* ══════ BUILT-FOR ══════ */}
         <motion.section className="built-strip" {...fadeView()}>
