@@ -601,7 +601,7 @@ export const BuyerDashboardView = () => {
       {activeAnnouncements.length > 0 && (
         <div className="space-y-2">
           {activeAnnouncements.map(ann => (
-            <div key={ann._id} className="flex items-center gap-3 rounded-2xl bg-indigo-600 px-5 py-4 text-white shadow-md">
+            <div key={ann._id} className="flex items-center gap-3 rounded-2xl bg-red-100 text-red-800 border-red-300 px-5 py-4 shadow-sm">
               <Megaphone className="h-5 w-5 shrink-0" />
               <p className="text-sm font-medium">
                 <strong className="mr-2 opacity-80 uppercase tracking-wider text-xs">{text.adminMessage || "Admin"}:</strong> 
